@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-border-color: black; -fx-border-width: 2; -fx-background-color: black;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.groupbakal.groupbakal_finalproject.LeaderboardController">
+   <children>
+      <ImageView fitHeight="413.0" fitWidth="610.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../movingbackground.gif" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER" layoutY="38.0" prefHeight="362.0" prefWidth="610.0" spacing="15.0">
+         <children>
+            <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Leaderboard" wrappingWidth="310.97271728515625">
+               <font>
+                  <Font name="Inlanders Bold" size="48.0" />
+               </font>
+               <effect>
+                  <DropShadow blurType="ONE_PASS_BOX" radius="9.415" width="18.66">
+                     <color>
+                        <Color red="1.0" green="0.8666666746139526" blue="0.20000000298023224" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Text>
+            <ComboBox fx:id="gameModeComboBox" onAction="#onGameModeSelected" prefHeight="26.0" prefWidth="198.0" style="-fx-background-color: fff; -fx-border-radius: 5; -fx-border-color: black; -fx-background-radius: 5;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ComboBox>
+            <ListView fx:id="leaderboardListView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="400.0" style="-fx-border-color: black; -fx-background-radius: 7; -fx-border-radius: 7;" />
+         </children>
+      </VBox>
+      <Button fx:id="backButton" alignment="TOP_LEFT" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: black; -fx-background-color: #46178F;" text="Back" textFill="WHITE" wrapText="true">
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../left-arrow.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" contrast="1.0" hue="0.62" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Luckiest Guy Regular" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

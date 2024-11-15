@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Luckiest Guy';
+    src: url('fonts/LuckiestGuy.ttf'); /* Adjust the path as necessary */
+}
+#title{
+    -fx-font-family: "Luckiest Guy";
+
+}

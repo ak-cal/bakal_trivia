@@ -1,0 +1,14 @@
+.quiz-root {
+    -fx-background-image: url('/background.jpg'); /* Use leading slash for root resources */
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+@font-face {
+    font-family: 'Luckiest Guy';
+    src: url('fonts/LuckiestGuy.ttf'); /* Adjust the path as necessary */
+}
+#title{
+    -fx-font-family: "Luckiest Guy";
+
+}
